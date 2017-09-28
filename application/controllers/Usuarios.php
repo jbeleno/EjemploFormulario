@@ -14,7 +14,7 @@ class Usuarios extends CI_Controller {
 		$correo = $this->input->post('correo');
 		$contrasena = $this->input->post('contrasena');
 
-		$resultado = adicionar($nombre, $correo, $contrasena);
+		$resultado = $this->usuarios_model->adicionar($nombre, $correo, $contrasena);
 		
 		$this->output
 	         ->set_content_type('application/json')
