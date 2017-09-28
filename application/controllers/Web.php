@@ -7,9 +7,4 @@ class Web extends CI_Controller {
 	{
 		$this->load->view('web/index');
 	}
-
-	public function otra()
-	{
-		$this->load->view('web/index');
-	}
 }
